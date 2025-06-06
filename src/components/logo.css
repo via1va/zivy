@@ -1,0 +1,44 @@
+.logo__animation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 99vh;
+  animation: menu 0.9s ease forwards 4s;
+}
+
+.logo {
+  font-size: 4vw;
+  width: fit-content;
+  transform: translateY(90px);
+  animation: dropDownBname 0.9s ease forwards 0s, big 1.9s ease forwards 2s;
+  font-weight: 100;
+  letter-spacing: 0rem;
+  color: #1E1E1E;
+}
+
+@keyframes dropDownBname {
+  to {
+    transform: translateY(0);
+    filter: blur(0px);
+    margin-left: -0.7vw;
+    margin-right: -0.7vw;
+
+  }
+
+}
+
+@keyframes big {
+  to {
+    transform: scale(90px);
+    font-size: 29vw;
+  }
+
+}
+
+@keyframes menu {
+  to {
+    font-size: 2vw;
+    height: 20vw;
+  }
+}

@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/Barlow.ttf');
+}
+
+@font-face {
+  font-family: 'General';
+  src: url('./assets/GeneralSans.ttf');
+}
+
+:root {
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  /* line-height: 1.5; */
+  font-weight: 400;
+  font-family: Barlow;
+  /* color-scheme: light dark; */
+  color: #1E1E1E;
+  background-color: #F4F5F6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: Barlow;
+}
+
+a {
+  font-family: General;
+}
