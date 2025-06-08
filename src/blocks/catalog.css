@@ -1,92 +1,92 @@
 .catalog {
   margin-top: 140px;
   display: grid;
-
-  grid: repeat(2, 1fr) / repeat(4, 1fr);
-  /* border-bottom: 2px solid; */
-  /* border-right: 2px solid; */
-  grid-template-rows: 26vw auto;
-}
-
-.catalog__cards {
-  grid-column: span 4;
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border-bottom: 2px solid;
-  border-right: 2px solid;
-  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+  font-family: 'General';
+  /* Убираем промежутки между карточками */
+  /* border-left: 2px solid #000; */
+  /* Левая граница сетки */
+  /* border-bottom: 2px solid #000; */
+  /* Нижняя граница сетки */
 }
 
 .catalog__title {
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  grid-column: span 4;
-  height: fit-content;
+  align-items: flex-start;
+  grid-column: 1 / -1;
+  /* Занимает все 4 колонки */
+  padding-bottom: 20px;
+  /* Отступ от заголовка до карточек */
 }
 
 .catalog__span {
   display: flex;
-  align-items: end;
-  box-sizing: border-box;
-}
-
-.catalog__span p {
-  align-items: end;
+  align-items: flex-end;
 }
 
 .catalog__h1 {
   text-transform: uppercase;
-  width: fit-content;
-  height: fit-content;
-  font-stretch: extra-condensed;
-  line-height: 0.8;
   font-size: 29vw;
+  line-height: 0.8;
   color: #365A56;
+  margin: 0;
 }
 
-p {
-  font-family: 'General';
-  font-size: 1.0vw;
-  font-weight: 500;
+.catalog__span p {
+  font-size: 1.2vw;
   text-transform: capitalize;
+  font-family: 'General';
 }
-
 
 .shop {
   margin-top: 3vw;
   text-transform: capitalize;
   text-decoration: underline;
+  font-size: 1.2vw;
 }
 
+.catalog__cards {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+/* Стили карточки */
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 1fr;
-  position: relative;
-  z-index: -1;
-  border-top: 2px solid;
-  border-left: 2px solid;
-  /* outline: 1px solid; */
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+  height: 100%;
+  /* Чтобы все карточки были одинаковой высоты */
 }
 
 .card__img {
-  flex: 1 1 auto;
-  /* border-bottom: 2px solid; */
+  flex: 1;
+  overflow: hidden;
+  /* Обрезаем изображение, если оно выходит за границы */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #000;
 }
 
 .card img {
-  border-bottom: 2px solid;
-
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Изображение заполняет контейнер без искажений */
 }
-
 
 .card__info {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin: 1vw;
+  align-items: center;
+  padding: 1vw;
 }
 
 .card__buy {
