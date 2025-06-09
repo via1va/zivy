@@ -7,7 +7,7 @@
   /* Убираем промежутки между карточками */
   /* border-left: 2px solid #000; */
   /* Левая граница сетки */
-  /* border-bottom: 2px solid #000; */
+  border-bottom: 2px solid #000;
   /* Нижняя граница сетки */
 }
 
@@ -51,7 +51,7 @@
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border-top: 2px solid #000;
+  /* border-top: 2px solid #000; */
   border-right: 2px solid #000;
 }
 

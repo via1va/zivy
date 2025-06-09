@@ -4,7 +4,7 @@ import Logo from "./logo";
 import "./menu.css";
 
 const leftMenu = ["Male", "Female", "Lookbook", "Contacts"];
-const rightMenu = ["Accound", "Search"];
+const rightMenu = ["Account", "Search"];
 
 interface MenuItemProps {
   text: string;
