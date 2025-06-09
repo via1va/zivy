@@ -23,7 +23,7 @@ export default function Footer() {
               </ul>
 
             </div>
-            <div className=''>
+            <div className='one'>
               <ul>
                 <div className='top'>
                   <li>Instagramm</li>

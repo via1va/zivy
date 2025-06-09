@@ -29,3 +29,38 @@
   cursor: pointer;
   transition: 0.5s;
 }
+
+
+
+
+@media screen and (max-width:768px) {
+  .firstblock {
+    padding: 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100vh;
+    margin-top: 0px;
+    /* background-image: url('https://i.pinimg.com/1200x/ef/a6/09/efa6097fe17e4ba9ffeb18d618416850.jpg'); */
+  }
+
+  .firstblock__text button {
+    border: 0.1vw solid;
+    padding: 1vw 2vw;
+    font-size: 4.2vw;
+    margin-top: 20px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+
+
+  .firstblock__text {
+    width: 80%;
+    font-size: 4vw;
+    color: white;
+    text-align: right;
+  }
+}

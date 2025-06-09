@@ -42,3 +42,16 @@
     height: 20vw;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 0.5vw;
+    width: fit-content;
+    transform: translateY(90px);
+    animation: dropDownBname 0.9s ease forwards 0s, big 1.9s ease forwards 2s;
+    font-weight: 100;
+    letter-spacing: 0rem;
+    color: white;
+  }
+}

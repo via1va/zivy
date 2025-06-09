@@ -101,3 +101,87 @@
   font-size: 1vw;
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 768px) {
+
+  .catalog {
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    font-family: 'General';
+    /* Убираем промежутки между карточками */
+    /* border-left: 2px solid #000; */
+    /* Левая граница сетки */
+    border-bottom: 2px solid #000;
+    /* Нижняя граница сетки */
+  }
+
+  .catalog__title {
+    display: flex;
+    /* column */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Занимает все 4 колонки */
+    padding-bottom: 20px;
+    /* Отступ от заголовка до карточек */
+  }
+
+  .catalog__span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+
+  }
+
+  .catalog__span p {
+    font-size: 2.3vw;
+    text-transform: capitalize;
+    font-family: 'General';
+  }
+
+  .shop {
+    font-size: 2.3vw;
+  }
+
+  .catalog__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    border-right: 0px solid #000;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    border-top: 2px solid #000;
+    height: 100%;
+    /* Чтобы все карточки были одинаковой высоты */
+  }
+
+  .card__buy {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #365A56;
+    border-radius: 50%;
+    color: white;
+    font-size: 1vw;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+}

@@ -43,3 +43,29 @@
   font-weight: 400;
   margin-top: 30px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .Footer {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .bottom li {
+    font-size: 4vw;
+  }
+
+  .one {
+    display: none;
+  }
+
+  .Footer__items {
+    display: none;
+  }
+}
